@@ -1,7 +1,7 @@
 <section aria-labelledby="countries-heading">
   <h2 id="countries-heading">Countries</h2>
 
-  <ul>
+  <ul class="countries-grid">
     @for (country of countries(); track country.name) {
       <li>
         <app-country-card [country]="country" />

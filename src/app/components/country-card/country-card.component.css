@@ -1,3 +1,9 @@
+/* block + full height so every card in a grid row is as tall as the tallest one */
+:host {
+  display: block;
+  height: 100%;
+}
+
 .country-card {
   display: flex;
   flex-direction: column;

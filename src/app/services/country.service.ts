@@ -7,7 +7,7 @@ import { Country } from '../models/country.model';
 
 const COUNTRIES_URL = 'countries.json';
 
-const FAKE_DELAY_MS = 200;
+const FAKE_DELAY_MS = 1500;
 
 @Injectable({ providedIn: 'root' })
 export class CountryService {

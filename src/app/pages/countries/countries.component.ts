@@ -10,6 +10,7 @@ import { tap } from 'rxjs';
   selector: 'app-countries',
   imports: [CountryCardComponent],
   templateUrl: './countries.component.html',
+  styleUrl: './countries.component.css',
 })
 export class CountriesComponent {
   private readonly destroyRef = inject(DestroyRef);

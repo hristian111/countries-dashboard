@@ -1,3 +1,9 @@
+:root {
+  --color-surface: #ffffff;
+  --color-border: #d0d5dd;
+  --color-text-muted: #475467;
+}
+
 *,
 *::before,
 *::after {

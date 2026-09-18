@@ -1,0 +1,21 @@
+<article class="country-card">
+  <img class="country-card-flag" [src]="country().image" [alt]="'Flag of ' + country().name" />
+
+  <div class="country-card-body">
+    <h3 class="country-card-name">{{ country().name }}</h3>
+    <p class="country-card-continent">{{ country().continent }}</p>
+
+    <dl class="country-card-facts">
+      <dt>Capital</dt>
+      <dd>{{ country().capital }}</dd>
+      <dt>Language</dt>
+      <dd>{{ country().language }}</dd>
+      <dt>Population</dt>
+      <dd>{{ country().population | number }}</dd>
+      <dt>Area</dt>
+      <dd>{{ country().totalArea | number }} km²</dd>
+    </dl>
+
+    <p class="country-card-info">{{ country().shortInfo }}</p>
+  </div>
+</article>

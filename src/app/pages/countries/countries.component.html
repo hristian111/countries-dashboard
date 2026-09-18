@@ -3,7 +3,9 @@
 
   <ul>
     @for (country of countries(); track country.name) {
-      <li>{{ country.name }}</li>
+      <li>
+        <app-country-card [country]="country" />
+      </li>
     }
   </ul>
 </section>

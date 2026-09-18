@@ -3,11 +3,12 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 import { Country } from '../../models/country.model';
 import { CountryService } from '../../services/country.service';
+import { CountryCardComponent } from '../../components/country-card/country-card.component';
 import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-countries',
-  imports: [],
+  imports: [CountryCardComponent],
   templateUrl: './countries.component.html',
 })
 export class CountriesComponent {

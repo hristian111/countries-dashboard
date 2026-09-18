@@ -1,0 +1,60 @@
+.country-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+/* contain, not cover: flags have different proportions and must not be cropped */
+.country-card-flag {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.country-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.country-card-name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.country-card-continent {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.country-card-facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  margin: 0;
+}
+
+.country-card-facts dt {
+  color: var(--color-text-muted);
+}
+
+.country-card-facts dd {
+  margin: 0;
+}
+
+.country-card-info {
+  margin: 0;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

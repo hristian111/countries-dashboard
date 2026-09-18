@@ -1,0 +1,9 @@
+<section aria-labelledby="countries-heading">
+  <h2 id="countries-heading">Countries</h2>
+
+  <ul>
+    @for (country of countries(); track country.name) {
+      <li>{{ country.name }}</li>
+    }
+  </ul>
+</section>

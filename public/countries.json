@@ -1,0 +1,312 @@
+[
+  {
+    "name": "United States",
+    "shortInfo": "A vast North American nation stretching from the Atlantic to the Pacific, known for its cultural influence, diverse landscapes, and economic power. It is home to major global cities, iconic national parks, and a federal system made up of fifty states. Its economy, entertainment industry, and technology sector have shaped much of modern global culture.",
+    "image": "https://flagcdn.com/w320/us.png",
+    "continent": "North America",
+    "capital": "Washington, D.C.",
+    "language": "English",
+    "population": 333000000,
+    "totalArea": 9833517
+  },
+  {
+    "name": "United Kingdom",
+    "shortInfo": "An island nation in Western Europe with a long history of parliamentary democracy and constitutional monarchy. Made up of England, Scotland, Wales, and Northern Ireland, it has played an outsized role in world history, literature, and industry. London, its capital, remains one of the world's leading financial and cultural centers.",
+    "image": "https://flagcdn.com/w320/gb.png",
+    "continent": "Europe",
+    "capital": "London",
+    "language": "English",
+    "population": 67000000,
+    "totalArea": 243610
+  },
+  {
+    "name": "France",
+    "shortInfo": "A Western European country celebrated for its art, cuisine, and architecture, from the boulevards of Paris to the vineyards of Bordeaux. It has one of the world's largest economies and is one of the most visited countries on Earth. France has also been central to European politics, philosophy, and fashion for centuries.",
+    "image": "https://flagcdn.com/w320/fr.png",
+    "continent": "Europe",
+    "capital": "Paris",
+    "language": "French",
+    "population": 68000000,
+    "totalArea": 551695
+  },
+  {
+    "name": "Germany",
+    "shortInfo": "A central European country known for its engineering, history, and strong industrial economy. Germany is the most populous member state of the European Union and a leading exporter of machinery, vehicles, and chemical products. Its cities blend medieval old towns with modern architecture and a rich musical and philosophical tradition.",
+    "image": "https://flagcdn.com/w320/de.png",
+    "continent": "Europe",
+    "capital": "Berlin",
+    "language": "German",
+    "population": 84000000,
+    "totalArea": 357022
+  },
+  {
+    "name": "Japan",
+    "shortInfo": "An East Asian island nation blending ancient tradition with cutting-edge technology. Japan is famous for its temples, seasonal festivals, and meticulous craftsmanship, as well as its leadership in robotics, electronics, and automotive engineering. Tokyo, its capital, is one of the largest and most densely populated metropolitan areas in the world.",
+    "image": "https://flagcdn.com/w320/jp.png",
+    "continent": "Asia",
+    "capital": "Tokyo",
+    "language": "Japanese",
+    "population": 124000000,
+    "totalArea": 377975
+  },
+  {
+    "name": "China",
+    "shortInfo": "The world's most populous country, with a history and civilization spanning thousands of years. China is a global manufacturing and technology powerhouse, home to the Great Wall, ancient dynasties, and rapidly growing megacities. It shares borders with more countries than almost any other nation on Earth.",
+    "image": "https://flagcdn.com/w320/cn.png",
+    "continent": "Asia",
+    "capital": "Beijing",
+    "language": "Mandarin",
+    "population": 1410000000,
+    "totalArea": 9596961
+  },
+  {
+    "name": "India",
+    "shortInfo": "A South Asian nation known for its immense cultural, linguistic, and religious diversity, with hundreds of languages spoken across its states. India is one of the fastest-growing major economies and the world's largest democracy by population. Its history includes ancient empires, colonial rule, and a landmark independence movement.",
+    "image": "https://flagcdn.com/w320/in.png",
+    "continent": "Asia",
+    "capital": "New Delhi",
+    "language": "Hindi",
+    "population": 1428000000,
+    "totalArea": 3287263
+  },
+  {
+    "name": "Brazil",
+    "shortInfo": "The largest country in South America both by area and population, home to most of the Amazon rainforest and a vast river system. Brazil is known for its beaches, carnival celebrations, and passion for football, as well as a large and diversified economy driven by agriculture and industry.",
+    "image": "https://flagcdn.com/w320/br.png",
+    "continent": "South America",
+    "capital": "Brasília",
+    "language": "Portuguese",
+    "population": 216000000,
+    "totalArea": 8515767
+  },
+  {
+    "name": "Canada",
+    "shortInfo": "A large North American country known for its natural landscapes, from Arctic tundra to Pacific coastline, and its multicultural cities. Canada has the second-largest land area of any country and is recognized for its high standard of living, natural resources, and bilingual English-French heritage.",
+    "image": "https://flagcdn.com/w320/ca.png",
+    "continent": "North America",
+    "capital": "Ottawa",
+    "language": "English, French",
+    "population": 39000000,
+    "totalArea": 9984670
+  },
+  {
+    "name": "Australia",
+    "shortInfo": "An Oceanian country and continent known for its unique wildlife, vast outback, and coastal cities. Home to kangaroos, koalas, and the Great Barrier Reef, Australia combines a highly urbanized population with some of the most remote and sparsely inhabited land on the planet.",
+    "image": "https://flagcdn.com/w320/au.png",
+    "continent": "Oceania",
+    "capital": "Canberra",
+    "language": "English",
+    "population": 26000000,
+    "totalArea": 7692024
+  },
+  {
+    "name": "South Africa",
+    "shortInfo": "A southern African nation known for its diversity and pivotal role in the anti-apartheid movement led by figures like Nelson Mandela. It has three capital cities and eleven official languages, and its landscapes range from savanna to coastline, mountains to wine country.",
+    "image": "https://flagcdn.com/w320/za.png",
+    "continent": "Africa",
+    "capital": "Pretoria",
+    "language": "Zulu, English, Afrikaans",
+    "population": 60000000,
+    "totalArea": 1221037
+  },
+  {
+    "name": "Egypt",
+    "shortInfo": "A North African nation home to ancient pyramids, temples, and one of the world's oldest civilizations along the Nile River. Modern Egypt is a major regional cultural and political hub, with Cairo as one of the largest metropolitan areas in Africa and the Middle East.",
+    "image": "https://flagcdn.com/w320/eg.png",
+    "continent": "Africa",
+    "capital": "Cairo",
+    "language": "Arabic",
+    "population": 112000000,
+    "totalArea": 1002450
+  },
+  {
+    "name": "Nigeria",
+    "shortInfo": "The most populous country in Africa, with a rapidly growing economy and a thriving film and music industry known as Nollywood and Afrobeats. Nigeria is home to hundreds of ethnic groups and languages, and its cities, especially Lagos, are major centers of commerce in West Africa.",
+    "image": "https://flagcdn.com/w320/ng.png",
+    "continent": "Africa",
+    "capital": "Abuja",
+    "language": "English",
+    "population": 223000000,
+    "totalArea": 923768
+  },
+  {
+    "name": "Kenya",
+    "shortInfo": "An East African country known for its savannas, wildlife safaris, and the annual wildebeest migration across the Maasai Mara. Kenya has a diverse population of dozens of ethnic groups and is a major hub for technology and finance in the East African region.",
+    "image": "https://flagcdn.com/w320/ke.png",
+    "continent": "Africa",
+    "capital": "Nairobi",
+    "language": "Swahili, English",
+    "population": 55000000,
+    "totalArea": 580367
+  },
+  {
+    "name": "Mexico",
+    "shortInfo": "A North American country rich in history, from ancient Aztec and Maya civilizations to vibrant modern cities. Mexico is known for its cuisine, festivals, and coastlines on both the Pacific Ocean and Gulf of Mexico, and it has one of the largest economies in Latin America.",
+    "image": "https://flagcdn.com/w320/mx.png",
+    "continent": "North America",
+    "capital": "Mexico City",
+    "language": "Spanish",
+    "population": 128000000,
+    "totalArea": 1964375
+  },
+  {
+    "name": "Argentina",
+    "shortInfo": "A South American nation famous for tango, football, and vast Patagonian landscapes stretching toward the southern tip of the continent. Argentina has a strong literary and artistic tradition and is one of the largest producers of beef and grain in the world.",
+    "image": "https://flagcdn.com/w320/ar.png",
+    "continent": "South America",
+    "capital": "Buenos Aires",
+    "language": "Spanish",
+    "population": 46000000,
+    "totalArea": 2780400
+  },
+  {
+    "name": "Italy",
+    "shortInfo": "A Southern European country renowned for its art, history, and cuisine, home to Renaissance masterpieces and ancient Roman ruins. Italy's regions each have distinct culinary and cultural traditions, and its fashion and design industries are recognized worldwide.",
+    "image": "https://flagcdn.com/w320/it.png",
+    "continent": "Europe",
+    "capital": "Rome",
+    "language": "Italian",
+    "population": 59000000,
+    "totalArea": 301340
+  },
+  {
+    "name": "Spain",
+    "shortInfo": "An Iberian nation known for its diverse regions, culture, and coastline, from the beaches of the Mediterranean to the mountains of the north. Spain's history includes Moorish influence, a global colonial empire, and a rich tradition of flamenco, art, and architecture.",
+    "image": "https://flagcdn.com/w320/es.png",
+    "continent": "Europe",
+    "capital": "Madrid",
+    "language": "Spanish",
+    "population": 47000000,
+    "totalArea": 505990
+  },
+  {
+    "name": "Russia",
+    "shortInfo": "The largest country in the world by area, spanning Eastern Europe and Northern Asia across eleven time zones. Russia has a long literary, scientific, and artistic tradition and vast natural resources, including some of the world's largest reserves of oil and natural gas.",
+    "image": "https://flagcdn.com/w320/ru.png",
+    "continent": "Europe",
+    "capital": "Moscow",
+    "language": "Russian",
+    "population": 144000000,
+    "totalArea": 17098242
+  },
+  {
+    "name": "South Korea",
+    "shortInfo": "An East Asian nation known for its technology industry, pop culture exports, and rapid post-war economic development. South Korea is a global leader in electronics and shipbuilding, and its music, film, and television have found large international audiences in recent decades.",
+    "image": "https://flagcdn.com/w320/kr.png",
+    "continent": "Asia",
+    "capital": "Seoul",
+    "language": "Korean",
+    "population": 51000000,
+    "totalArea": 100210
+  },
+  {
+    "name": "Thailand",
+    "shortInfo": "A Southeast Asian country known for tropical beaches, ornate Buddhist temples, and a lively street food culture. Thailand is one of the region's top tourist destinations and has never been colonized by a European power, a point of national pride.",
+    "image": "https://flagcdn.com/w320/th.png",
+    "continent": "Asia",
+    "capital": "Bangkok",
+    "language": "Thai",
+    "population": 71000000,
+    "totalArea": 513120
+  },
+  {
+    "name": "Vietnam",
+    "shortInfo": "A Southeast Asian nation known for its beaches, terraced rice fields, and bustling cities like Hanoi and Ho Chi Minh City. Vietnam has a long history of resilience through conflict and colonization, and it has become one of the fastest-growing manufacturing economies in Asia.",
+    "image": "https://flagcdn.com/w320/vn.png",
+    "continent": "Asia",
+    "capital": "Hanoi",
+    "language": "Vietnamese",
+    "population": 99000000,
+    "totalArea": 331212
+  },
+  {
+    "name": "Indonesia",
+    "shortInfo": "A Southeast Asian archipelago made up of over seventeen thousand islands spanning three time zones. Indonesia is the world's largest Muslim-majority country and one of the most linguistically diverse nations, with hundreds of local languages spoken alongside Indonesian.",
+    "image": "https://flagcdn.com/w320/id.png",
+    "continent": "Asia",
+    "capital": "Jakarta",
+    "language": "Indonesian",
+    "population": 277000000,
+    "totalArea": 1904569
+  },
+  {
+    "name": "Saudi Arabia",
+    "shortInfo": "A Middle Eastern nation covering most of the Arabian Peninsula, home to the holy cities of Mecca and Medina. Saudi Arabia holds some of the world's largest oil reserves and has been pursuing rapid economic diversification and modernization in recent years.",
+    "image": "https://flagcdn.com/w320/sa.png",
+    "continent": "Asia",
+    "capital": "Riyadh",
+    "language": "Arabic",
+    "population": 36000000,
+    "totalArea": 2149690
+  },
+  {
+    "name": "Turkey",
+    "shortInfo": "A transcontinental country bridging Europe and Asia across the Bosphorus strait, with Istanbul as its largest and most historic city. Turkey's history includes the Ottoman and Byzantine empires, and its cuisine, textiles, and archaeological sites draw visitors from around the world.",
+    "image": "https://flagcdn.com/w320/tr.png",
+    "continent": "Asia",
+    "capital": "Ankara",
+    "language": "Turkish",
+    "population": 85000000,
+    "totalArea": 783562
+  },
+  {
+    "name": "Netherlands",
+    "shortInfo": "A Western European country known for its canals, tulip fields, and extensive cycling culture. Much of the Netherlands sits below sea level, protected by an elaborate system of dikes and pumps, and the country is a major hub for European trade and logistics.",
+    "image": "https://flagcdn.com/w320/nl.png",
+    "continent": "Europe",
+    "capital": "Amsterdam",
+    "language": "Dutch",
+    "population": 17000000,
+    "totalArea": 41850
+  },
+  {
+    "name": "Sweden",
+    "shortInfo": "A Nordic country known for its design, extensive welfare system, and vast forests and lakes. Sweden combines a strong tradition of social equality with a globally competitive technology and manufacturing sector, and it consistently ranks highly in quality-of-life measures.",
+    "image": "https://flagcdn.com/w320/se.png",
+    "continent": "Europe",
+    "capital": "Stockholm",
+    "language": "Swedish",
+    "population": 10500000,
+    "totalArea": 450295
+  },
+  {
+    "name": "Norway",
+    "shortInfo": "A Scandinavian country famous for its dramatic fjords, mountainous terrain, and long Arctic coastline. Norway's economy benefits from substantial oil and gas reserves, which it has channeled into one of the largest sovereign wealth funds in the world.",
+    "image": "https://flagcdn.com/w320/no.png",
+    "continent": "Europe",
+    "capital": "Oslo",
+    "language": "Norwegian",
+    "population": 5500000,
+    "totalArea": 385207
+  },
+  {
+    "name": "Switzerland",
+    "shortInfo": "A mountainous Central European country known for its neutrality, precision engineering, and the Swiss Alps. Switzerland is home to major international organizations, a highly developed banking sector, and four official national languages spoken across its cantons.",
+    "image": "https://flagcdn.com/w320/ch.png",
+    "continent": "Europe",
+    "capital": "Bern",
+    "language": "German, French, Italian",
+    "population": 8800000,
+    "totalArea": 41285
+  },
+  {
+    "name": "Poland",
+    "shortInfo": "A Central European nation with a rich history and a rapidly growing economy since its transition from communism. Poland's cities blend rebuilt medieval old towns with modern industry, and the country has become an important manufacturing and IT hub within the European Union.",
+    "image": "https://flagcdn.com/w320/pl.png",
+    "continent": "Europe",
+    "capital": "Warsaw",
+    "language": "Polish",
+    "population": 37000000,
+    "totalArea": 312696
+  },
+  {
+    "name": "Greece",
+    "shortInfo": "A Southern European country considered the birthplace of Western civilization, philosophy, and democracy. Greece's thousands of islands, ancient ruins, and Mediterranean climate make it one of Europe's most visited destinations, alongside a long maritime and shipping tradition.",
+    "image": "https://flagcdn.com/w320/gr.png",
+    "continent": "Europe",
+    "capital": "Athens",
+    "language": "Greek",
+    "population": 10400000,
+    "totalArea": 131957
+  }
+]

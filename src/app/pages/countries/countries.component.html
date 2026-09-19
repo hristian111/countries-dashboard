@@ -32,7 +32,7 @@
   <section class="legend" aria-labelledby="legend-heading">
     <h2 id="legend-heading" class="legend-heading">Continents</h2>
 
-    <ul class="legend-list">
+    <ul class="legend-list" role="list">
       @for (continent of continents(); track continent) {
         <li class="legend-item" [attr.data-continent]="continent">{{ continent }}</li>
       }
@@ -45,7 +45,7 @@
     @if (displayedCountries().length === 0) {
       <p class="status" role="status">No countries match your search.</p>
     } @else {
-      <ul class="countries-grid">
+      <ul class="countries-grid" role="list">
         @for (country of displayedCountries(); track country.name) {
           <li>
             <app-country-card [country]="country" />

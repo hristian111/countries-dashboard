@@ -92,11 +92,12 @@ export class CountriesComponent {
     
     if (sortBy === 'population') {
       return sorted.sort((a, b) => b.population - a.population);
-    } else if (sortBy === 'totalArea') {
+    }
+    if (sortBy === 'totalArea') {
       return sorted.sort((a, b) => b.totalArea - a.totalArea);
     }
 
-    return sorted
+    return sorted.sort((a, b) => a.name.localeCompare(b.name));
   }
 
 }

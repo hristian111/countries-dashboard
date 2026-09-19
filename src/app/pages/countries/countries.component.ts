@@ -4,7 +4,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Country } from '../../models/country.model';
 import { CountryService } from '../../services/country.service';
 import { CountryCardComponent } from '../../components/country-card/country-card.component';
-import { tap } from 'rxjs';
+import { catchError, tap } from 'rxjs';
 
 @Component({
   selector: 'app-countries',
@@ -18,6 +18,8 @@ export class CountriesComponent {
 
   protected readonly countries = signal<Country[]>([]);
   protected readonly continents = signal<string[]>([]);
+  protected readonly loading = signal<boolean>(true);
+  protected readonly error = signal<string | null>(null);
 
   constructor() {
     this.getCountries();
@@ -27,10 +29,15 @@ export class CountriesComponent {
     this.countryService
       .getCountries()
       .pipe(
-        tap((data) => {
-          console.log(data);
-          this.countries.set(data);
-          this.continents.set(this.getContinents(data));
+        tap((countries) => {
+          this.countries.set(countries);
+          this.continents.set(this.getContinents(countries));
+          this.loading.set(false);
+        }),
+        catchError(() => {
+          this.error.set('An error occurred while fetching data.');
+          this.loading.set(false);
+          return [];
         }),
         takeUntilDestroyed(this.destroyRef),
       )

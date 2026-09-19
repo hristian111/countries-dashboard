@@ -1,21 +1,27 @@
-<section class="legend" aria-labelledby="legend-heading">
-  <h2 id="legend-heading" class="legend-heading">Continents</h2>
+@if (loading()) {
+  <p class="status" role="status">Loading data...</p>
+} @else if (error()) {
+  <p class="status" role="alert">{{ error() }}</p>
+} @else {
+  <section class="legend" aria-labelledby="legend-heading">
+    <h2 id="legend-heading" class="legend-heading">Continents</h2>
 
-  <ul class="legend-list">
-    @for (continent of continents(); track continent) {
-      <li class="legend-item" [attr.data-continent]="continent">{{ continent }}</li>
-    }
-  </ul>
-</section>
+    <ul class="legend-list">
+      @for (continent of continents(); track continent) {
+        <li class="legend-item" [attr.data-continent]="continent">{{ continent }}</li>
+      }
+    </ul>
+  </section>
 
-<section aria-labelledby="countries-heading">
-  <h2 id="countries-heading">Countries</h2>
+  <section aria-labelledby="countries-heading">
+    <h2 id="countries-heading">Countries</h2>
 
-  <ul class="countries-grid">
-    @for (country of countries(); track country.name) {
-      <li>
-        <app-country-card [country]="country" />
-      </li>
-    }
-  </ul>
-</section>
+    <ul class="countries-grid">
+      @for (country of countries(); track country.name) {
+        <li>
+          <app-country-card [country]="country" />
+        </li>
+      }
+    </ul>
+  </section>
+}

@@ -1,5 +1,13 @@
 <header class="app-header">
   <h1>Countries Dashboard</h1>
+
+  <button type="button" class="theme-toggle" (click)="themeService.toggleTheme()">
+    @if (themeService.theme() === 'dark') {
+      Light theme
+    } @else {
+      Dark theme
+    }
+  </button>
 </header>
 
 <main class="app-main">

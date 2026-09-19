@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { CountriesComponent } from './pages/countries/countries.component';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,6 @@ import { CountriesComponent } from './pages/countries/countries.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {}
+export class AppComponent {
+  protected readonly themeService = inject(ThemeService);
+}

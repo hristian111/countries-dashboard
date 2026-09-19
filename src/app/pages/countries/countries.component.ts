@@ -17,6 +17,7 @@ export class CountriesComponent {
   private readonly countryService = inject(CountryService);
 
   protected readonly countries = signal<Country[]>([]);
+  protected readonly continents = signal<string[]>([]);
 
   constructor() {
     this.getCountries();
@@ -29,9 +30,15 @@ export class CountriesComponent {
         tap((data) => {
           console.log(data);
           this.countries.set(data);
+          this.continents.set(this.getContinents(data));
         }),
         takeUntilDestroyed(this.destroyRef),
       )
       .subscribe();
+  }
+
+  private getContinents(countries: Country[]): string[] {
+    const continents = new Set(countries.map((country) => country.continent));
+    return Array.from(continents).sort();
   }
 }

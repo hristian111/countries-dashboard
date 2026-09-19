@@ -2,7 +2,22 @@
   --color-surface: #ffffff;
   --color-border: #d0d5dd;
   --color-text-muted: #475467;
+
+  --color-africa: #b45309;
+  --color-asia: #be123c;
+  --color-europe: #1d4ed8;
+  --color-north-america: #047857;
+  --color-oceania: #0e7490;
+  --color-south-america: #7e22ce;
 }
+
+/* Used by both the country cards and the legend */
+[data-continent='Africa'] { --continent-color: var(--color-africa); }
+[data-continent='Asia'] { --continent-color: var(--color-asia); }
+[data-continent='Europe'] { --continent-color: var(--color-europe); }
+[data-continent='North America'] { --continent-color: var(--color-north-america); }
+[data-continent='Oceania'] { --continent-color: var(--color-oceania); }
+[data-continent='South America'] { --continent-color: var(--color-south-america); }
 
 *,
 *::before,

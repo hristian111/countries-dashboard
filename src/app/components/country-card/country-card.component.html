@@ -1,4 +1,4 @@
-<article class="country-card">
+<article class="country-card" [attr.data-continent]="country().continent">
   <img class="country-card-flag" [src]="country().image" [alt]="'Flag of ' + country().name" />
 
   <div class="country-card-body">

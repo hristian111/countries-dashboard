@@ -1,3 +1,31 @@
+.legend-heading {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.legend-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-item::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--continent-color, var(--color-border));
+}
+
 .countries-grid {
   display: grid;
   grid-template-columns: 1fr;

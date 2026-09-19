@@ -14,6 +14,13 @@
   overflow: hidden;
 }
 
+/* a strip instead of a thick border-top, so the rounded corners stay even */
+.country-card::before {
+  content: '';
+  height: 6px;
+  background: var(--continent-color, var(--color-border));
+}
+
 /* contain, not cover: flags have different proportions and must not be cropped */
 .country-card-flag {
   display: block;
@@ -36,9 +43,20 @@
 }
 
 .country-card-continent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin: 0;
   font-size: 0.875rem;
   color: var(--color-text-muted);
+}
+
+.country-card-continent::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--continent-color, var(--color-border));
 }
 
 .country-card-facts {

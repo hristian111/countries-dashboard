@@ -1,3 +1,13 @@
+<section class="legend" aria-labelledby="legend-heading">
+  <h2 id="legend-heading" class="legend-heading">Continents</h2>
+
+  <ul class="legend-list">
+    @for (continent of continents(); track continent) {
+      <li class="legend-item" [attr.data-continent]="continent">{{ continent }}</li>
+    }
+  </ul>
+</section>
+
 <section aria-labelledby="countries-heading">
   <h2 id="countries-heading">Countries</h2>
 

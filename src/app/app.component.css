@@ -5,6 +5,10 @@
   padding: 0 16px;
 }
 
+.app-main {
+  padding-bottom: 48px;
+}
+
 .app-header {
   display: flex;
   align-items: center;

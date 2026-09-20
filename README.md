@@ -1,59 +1,66 @@
-# CountriesDashboard
+# Countries Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+A single-page app that reads `countries.json` over HTTP and shows the countries as a grid of cards.
+It supports search, filtering by continent, sorting, a light/dark theme, and shows 12 cards at a time.
 
-## Development server
+## Running it locally
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Requires Node 22.12+ (developed on 24.18) and npm.
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Then open http://localhost:4200. To build for production, run `npm run build` — the output goes to `dist/`.
 
-```bash
-ng generate --help
-```
+## Stack, and why
 
-## Building
+- **Angular 22** with standalone components, zoneless change detection and TypeScript. The task
+  prefers React but allows another framework I'm comfortable with. Angular is what I use every day,
+  so I could spend the time on the actual requirements — accessibility, theming, state — instead of
+  learning a new framework.
+- **Plain CSS** with custom properties, no UI library. Both themes use the same variable names with
+  different values, so no component hardcodes a colour.
+- **TypeScript** everywhere, with no `any`.
 
-To build the project run:
+## How it works
 
-```bash
-ng build
-```
+- **`CountryService`** is the only place that makes HTTP calls. It fetches `/countries.json` (served
+  from `public/`, so it works like a real `GET /countries` endpoint) and adds a 1.5s delay so the
+  loading state is visible. The file contains 31 countries.
+- **`CountriesComponent`** (`pages/countries`) holds the screen state in plain signals: `countries`
+  (the full list), `displayedCountries` (max 12), `loading`, `error` and `continents`. A reactive
+  form holds the search text, the selected continent and the sort field. Any change calls
+  `applyFilters()`, which filters the full list, sorts it, takes the first 12 and sets
+  `displayedCountries`. Filtering always starts from the full list, so the cap only limits what is
+  shown, not what is searched.
+- **`CountryCardComponent`** (`components/country-card`) just displays one country passed in as an
+  input.
+- **`ThemeService`** keeps the theme in a signal, sets `data-theme` on `<html>` and saves the choice
+  in `localStorage`.
+- **Continent colours** are CSS custom properties, so the card and the legend use the same value.
+  The dark theme uses lighter shades that stay readable on dark backgrounds.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Accessibility
 
-## Running unit tests
+- Semantic structure: `header`, `main`, `section` labelled by its heading, `ul`/`li` for the card
+  list, `article` for each card, and headings in order (h1 → h2 → h3).
+- Flags have `alt="Flag of <country>"`, every form control has a `<label>`, and the loading, error
+  and empty-result messages use `role="status"` / `role="alert"` so screen readers announce them.
+- Colour is never the only way information is shown — the continent name is always written next to
+  its colour, both on the card and in the legend.
+- Lighthouse accessibility: 100 in navigation mode and 25/25 audits passing in snapshot mode, in
+  both light and dark themes, on desktop and mobile.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## What I'd improve with more time
 
-```bash
-ng test
-```
+- **Move filtering and sorting to a backend endpoint.** With 31 countries doing it in the browser is
+  fine, but with a real dataset the client shouldn't fetch everything just to slice it locally.
+- **A detail page per country**, with routing, instead of fitting everything on the card.
+- **Proper pagination.** The 12-card cap is what the task asks for; in a real app I'd
+  make the rest of the data reachable instead of cutting it off.
 
-## Running end-to-end tests
+## Working with AI tools
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+See [AI_NOTES.md](AI_NOTES.md).

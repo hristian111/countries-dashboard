@@ -4,22 +4,22 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Country } from '../../models/country.model';
 import { CountryService } from '../../services/country.service';
 import { CountryCardComponent } from '../../components/country-card/country-card.component';
-import { catchError, tap } from 'rxjs';
-import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { catchError, EMPTY, tap } from 'rxjs';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 
 const MAX_COUNTRIES = 12;
 
 @Component({
   selector: 'app-countries',
-  imports: [CountryCardComponent, FormsModule, ReactiveFormsModule],
+  imports: [CountryCardComponent, ReactiveFormsModule],
   templateUrl: './countries.component.html',
   styleUrl: './countries.component.css',
 })
 export class CountriesComponent {
   private readonly destroyRef = inject(DestroyRef);
   private readonly countryService = inject(CountryService);
-  protected fb = inject(FormBuilder);
+  private readonly fb = inject(FormBuilder);
 
   protected readonly countries = signal<Country[]>([]);
   protected readonly continents = signal<string[]>([]);
@@ -59,7 +59,7 @@ export class CountriesComponent {
         catchError(() => {
           this.error.set('An error occurred while fetching data.');
           this.loading.set(false);
-          return [];
+          return EMPTY;
         }),
         takeUntilDestroyed(this.destroyRef),
       )
